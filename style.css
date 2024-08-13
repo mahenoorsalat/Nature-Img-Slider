@@ -1,0 +1,75 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.container{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    background: #222;
+}
+
+.clip{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ;
+}
+
+
+.clip1{
+    background-image: url(image.jpg);
+    background-position: center;
+    background-size: cover;
+    clip-path: polygon(0 0 , 46% 0 , 39% 100% , 0 100%);
+    
+}
+
+.clip2{
+    background-image: url(image2.jpg);
+    background-position: center;
+    background-size: cover;
+    clip-path: polygon(19% 0 , 87% 0 , 64% 100% , 33% 100%);
+    
+}
+.clip3{
+    background-image: url(image3.jpg);
+    background-position: center;
+    background-size: cover;
+    clip-path: polygon(82% 0 , 100% 0 , 100% 100% , 63% 100%);
+    
+}
+
+.container:hover .clip{
+    clip-path: polygon(100% 0 , 100% 0 , 100% 100% , 100% 100%);
+}
+.container .clip:hover{
+    clip-path: polygon( 0  0 , 100% 0% , 100% 100% , 0% 100%);
+}
+
+
+@media (max-width: 440px) {
+    .container{
+        position: relative;
+        width: 300px;
+        height: 400px;
+        background: #222;
+    }
+}
