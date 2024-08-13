@@ -20,4 +20,4 @@ The project consists of a full-page video background with a slider on top of it.
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/SalatMahenoor/Nature-Img-Slider.git
+   git clone https://github.com/mahenoorsalat/Nature-Img-Slider.git
